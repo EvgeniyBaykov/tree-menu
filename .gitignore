@@ -1,0 +1,23 @@
+.python-version
+/.idea/
+.idea/
+.idea
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Translations
+*.mo
+*.pot

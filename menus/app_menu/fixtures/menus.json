@@ -1,0 +1,18 @@
+[
+  {
+    "model": "app_menu.menu",
+    "pk": 1,
+    "fields": {
+      "title": "First menu",
+      "description": "First menu"
+    }
+  },
+  {
+    "model": "app_menu.menu",
+    "pk": 2,
+    "fields": {
+      "title": "Second menu",
+      "description": "Second menu"
+    }
+  }
+]

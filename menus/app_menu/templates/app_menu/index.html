@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+{% load draw_menu %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if menus %}
+    {% for menu in menus %}
+        <h2><a href="/{{ menu.title }}">{{ menu.title }}</a></h2>
+        {% if menu.title == m_name %}
+            {% draw_menu m_name i_name %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+    <p>Меню не добавлены</p>
+{% endif %}
+</body>
+</html>

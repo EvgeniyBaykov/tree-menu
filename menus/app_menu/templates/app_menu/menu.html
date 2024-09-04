@@ -1,0 +1,15 @@
+{% load filters %}
+
+<ul>
+{% for item in items %}
+    {% if item|is_list %}
+        <li>
+        {% include "app_menu/menu.html" with items=item %}
+        </li>
+    {% else %}
+    <li>
+    <a href="/{{ m_name }}/{{ item.name }}">{{ item }}</a>
+    </li>
+    {% endif %}
+{% endfor %}
+</ul>
