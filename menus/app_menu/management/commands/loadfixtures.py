@@ -6,6 +6,5 @@ class Command(BaseCommand):
     help = 'Загрузка всех фикстур'
 
     def handle(self, *args, **options):
-        management.call_command('loaddata', 'app_menu/fixtures/users.json')
-        management.call_command('loaddata', 'app_menu/fixtures/menus.json')
-        management.call_command('loaddata', 'app_menu/fixtures/menuitems.json')
+        management.call_command('loaddata', 'menus/app_menu/fixtures/menus.json')
+        management.call_command('loaddata', 'menus/app_menu/fixtures/menuitems.json')
